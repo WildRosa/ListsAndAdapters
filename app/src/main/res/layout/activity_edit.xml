@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:hint="ФИО"
+            android:inputType="textPersonName"
+            android:id="@+id/etName"
+            android:fadeScrollbars="true">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Стереть"
+            android:id="@+id/btnClear1">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:hint="Номер отдела"
+            android:id="@+id/etDepatment"
+            android:inputType="number"
+            android:fadeScrollbars="true">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Стереть"
+            android:id="@+id/btnClear2">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:hint="Должность"
+            android:id="@+id/etPosition"
+            android:inputType="text"
+            android:fadeScrollbars="true">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Стереть"
+
+            android:id="@+id/btnClear3">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:hint="Дата начала работы"
+            android:id="@+id/etDate"
+            android:text=""
+            android:inputType="date"
+            android:fadeScrollbars="true">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Стереть"
+            android:id="@+id/btnClear4">
+        </Button>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK" >
+    </Button>
+
+    <TextView
+        android:id="@+id/textError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF1830"
+        android:visibility="invisible"
+        android:gravity="center"
+
+        android:text="Заполнены не все поля" />
+
+</LinearLayout>
